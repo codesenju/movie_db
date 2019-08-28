@@ -22,7 +22,7 @@ Download data.tar.gz file [here](https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87Wa
 
  
 Copy the data.tar.gz into your folder /imdb_lite
-Run the command $ ```shell ls -alh ```and your folder /imdb_lite should be looking like this below:
+Run the command $ ``` ls -alh ```and your folder /imdb_lite should be looking like this below:
  
 If your directory looks similar to the above image now you can move on to the next step to build your db2 image.
 $ docker build -t codesenju/imdb_lite .
@@ -38,7 +38,7 @@ Now we going to login into the db2 container and configure the database schema
 ```shell
 docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
 ``` 
-Run the script ```shell ./createschema.sh``` to create the database schema and import table records
+Run the script ```shell ./createschema.sh ``` to create the database schema and import table records
 When you're done exit the container
 ```shell
 exit
