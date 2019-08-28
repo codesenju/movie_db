@@ -2,8 +2,8 @@ Part 1 - LinuxOne Community Cloud
 Register at LinuxOne Community Cloud for a trial account. We will be using a RHEL base image for this journey, so be sure to choose the 'Request your trial' button on the left side of this page.
 Install git: https://git-scm.com/downloads 
 Install docker: 
-$ sudo su
-$ cd ~
+$ sudo su /n
+$ cd ~ /n
 $ yum -y install wget
 $ wget ftp://ftp.unicamp.br/pub/linuxpatch/s390x/redhat/rhel7.3/docker-17.05.0-ce-rhel7.3-20170523.tar.gz
 $ tar -xzvf docker-17.05.0-ce-rhel7.3-20170523.tar.gz
