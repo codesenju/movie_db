@@ -31,13 +31,13 @@ $ docker build -t codesenju/imdb_lite .
 
 Create a container network that will be used by your two micro services.
 ```shell 
-docker network create mynet
+$ docker network create mynet
 ```
 Run your db2 image as a container
 ```shell
-docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME=MOVIE -v /usr/src/app:/database codesenju/imdb_lite
+$ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME=MOVIE -v /usr/src/app:/database codesenju/imdb_lite
 ```
-After successfully running the last command you can check if you have a container instance of db2 running by executing the following `` docker ps ``
+After successfully running the last command you can check if you have a container instance of db2 running by executing the following ``$\#\$ docker ps ``
  
 
 Now we going to login into the db2 container and configure the database schema
