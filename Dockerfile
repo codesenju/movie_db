@@ -1,8 +1,9 @@
 FROM ibmcom/db2
 
-WORKDIR  /var/custom
-COPY . ./
+RUN mkdir  /var/custom
+COPY . /var/custom
 
-RUN tar -zxvf data.tar.gz
-RUN rm -rf data.tar.gz
-RUN chmod a+x createschema.sh
+RUN tar -zxvf /var/custom/data.tar.gz
+RUN mv *.ixf /var/custom
+RUN rm -rf /var/custom/data.tar.gz
+RUN chmod a+x /var/custom/createschema.sh
