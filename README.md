@@ -1,7 +1,7 @@
 # Part 1 - Prerequisites
-Register at LinuxOne Community Cloud for a trial account. We will be using a RHEL base image for this journey, so be sure to choose the 'Request your trial' button on the left side of this page.
+Register at LinuxOne Community Cloud for a trial account and get a linux VM. We will be using a RHEL base image for this a RHEL
 
-Install git: https://git-scm.com/downloads 
+[Install git](https://git-scm.com/downloads) 
 
 Install docker:
 ```shell
