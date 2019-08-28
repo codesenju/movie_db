@@ -13,7 +13,7 @@ ar -xzvf docker-17.05.0-ce-rhel7.3-20170523.tar.gz
 $ cp docker-17.05.0-ce-rhel7.3-20170523/docker* /usr/bin/
 $ docker daemon -g /local/docker/lib &
 ```
-# Part 2 – Build a IBM db2 Database Container
+# Part 2 – Build an IBM db2 Database Container
 ```shell
 $ git clone https://github.com/codesenju/imdb_lite.git
 $ cd imdb_lite 
@@ -42,7 +42,7 @@ After successfully running the last command you can check if you have a containe
 
 Now we going to login into the db2 container and configure the database schema
 ```shell
-docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
+$ docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
 ``` 
 Run the script `` ./createschema.sh `` to create the database schema and import table records.
 When you're done exit the container with ``$ exit ``
@@ -57,7 +57,7 @@ $ docker run --net mynet -p 49160:8081 -d codesenju/nodejs_api4db2
 ```
 # Part 4 - Test
 ```shell
-curl localhost:49160
+$ curl localhost:49160
 ```
 
  
