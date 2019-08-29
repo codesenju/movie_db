@@ -42,7 +42,7 @@ cd imdb_lite
 
 ![imdb_lite_dir](images/imdb_lite_dir.PNG)
 
-* Build your db2 image.
+* ### Build your db2 image.
 ```bash
 docker build -t codesenju/imdb_lite .
 ```
@@ -60,7 +60,7 @@ docker build -t codesenju/imdb_lite .
 ```bash 
 docker network create mynet
 ```
-* Run your db2 image as a container.
+* ### Run your db2 image as a container.
 ```bash
 docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME=MOVIE -v /usr/src/app:/database codesenju/imdb_lite
 ```
@@ -78,7 +78,7 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
    
 ![dockerps_imdblite](images/dockerpsimdblite.PNG)
 
-* Now we going to login into the db2 container and configure the database schema.
+* ### Now we going to login into the db2 container and configure the database schema.
 
 ```shell
 docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
