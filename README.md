@@ -1,3 +1,5 @@
+![Diagram](images/diagram.png)
+
 # Part 1 - Prerequisites
 Register at LinuxOne Community Cloud for a trial account and get a linux VM. We will be using a RHEL base image for this a RHEL
 
