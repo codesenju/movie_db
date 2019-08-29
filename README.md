@@ -107,7 +107,28 @@ docker run --net mynet -p 49160:8081 -d codesenju/nodejs_api4db2
   <img src="images/gifs/nodejs.gif">
 </p>
 <br>
+
 # Part 4 - Test your environment
+* Test within the LinuxOne machine using cURL
 ```shell
 curl localhost:49160
+curl localhost:49160/api/all
 ```
+<br>
+<p align="center">
+  <img src="images/gifs/curl.gif">
+</p>
+<br>
+
+* Test from any browser by entering the following url:
+```bash
+https://<vm-ip>:49160/ # replace <vm-ip> with your LinuxOne machine IP address.
+https:<vm-ip>:49160/api/all
+```
+
+* Test with [Postman](https://www.getpostman.com/downloads/)
+<br>
+<p align="center">
+  <img src="images/gifs/postman.gif">
+</p>
+<br>
