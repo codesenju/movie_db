@@ -44,6 +44,7 @@ cd imdb_lite
 
 * ### Build your db2 image.
 ```bash
+rm -rf images/ #first lets remove unnecessary files
 docker build -t codesenju/imdb_lite .
 ```
 <br>
