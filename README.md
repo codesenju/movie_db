@@ -43,7 +43,7 @@ cd imdb_lite
 ![imdb_lite_dir](images/imdb_lite_dir.PNG)
 
 * Build your db2 image.
-```shell
+```bash
 docker build -t codesenju/imdb_lite .
 ```
 <br>
@@ -54,16 +54,18 @@ docker build -t codesenju/imdb_lite .
 
 * After successful build, run the command ``docker images`` to see your image loaded into docker. On completion, you should see the following output on console:
 
-![imdb_lite_dir](images/image.PNG)
+![docker_images](images/docker_images.PNG)
 
 * Create a container network that will be used by your two micro services.
-```shell 
+```bash 
 docker network create mynet
 ```
 * Run your db2 image as a container.
-```shell
+```bash
 docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME=MOVIE -v /usr/src/app:/database codesenju/imdb_lite
 ```
+
+
 * After successfully executing the last command you can check if you have a container instance of db2 running by executing the following following command: 
 
 ``$ docker ps ``
