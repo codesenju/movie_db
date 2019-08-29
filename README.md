@@ -52,7 +52,7 @@ docker build -t codesenju/imdb_lite .
 </p>
 <br>
 
-   - After successful build, run the command ``docker images`` to see your image loaded into docker. On completion, you should see the following output on console:
+  - After successful build, run the command ``docker images`` to see your image loaded into docker. On completion, you should see the following output on console:
 
 ![docker_images](images/dockerimages.PNG)
 
@@ -70,10 +70,10 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
 </p>
 <br>
 
-   - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command:
+  - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command:
    
 ``$ docker ps ``
-   - You should see the following output on console:
+  - You should see the following output on console:
    
 ![dockerps_imdblite](images/dockerpsimdblite.PNG)
 
@@ -88,7 +88,7 @@ docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
 
 ![createschema](images/createschema.png)
 
-   - When you're done exit the container with ``$ exit ``.
+  - When you're done exit the container with ``$ exit ``.
 
 # Part 3 – Node.js App Container 
 ```shell
