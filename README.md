@@ -72,6 +72,7 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
    - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command: 
 ``$ docker ps ``
    - You should see the following output on console:
+   
 ![dockerps_imdblite](images/dockerps_imdblite.PNG)
 
 * Now we going to login into the db2 container and configure the database schema.
@@ -98,6 +99,3 @@ docker run --net mynet -p 49160:8081 -d codesenju/nodejs_api4db2
 ```shell
 curl localhost:49160
 ```
-
- 
- 
