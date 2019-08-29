@@ -19,6 +19,12 @@ ar -xzvf docker-17.05.0-ce-rhel7.3-20170523.tar.gz
 $ cp docker-17.05.0-ce-rhel7.3-20170523/docker* /usr/bin/
 $ docker daemon -g /local/docker/lib &
 ```
+<br>
+<p align="center">
+  <img src="images/gifs/installdocker.gif">
+</p>
+<br>
+
 # Part 2 – IBM db2 Database Container
 ```shell
 $ git clone https://github.com/codesenju/imdb_lite.git
