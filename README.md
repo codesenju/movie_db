@@ -5,7 +5,7 @@
 
 * Click on Try Virtual Machines on the LinuxONE™ Community Cloud
 
-![try](images/try.png)
+![try](images/try.PNG)
 
 * <a href="https://git-scm.com/downloads" target="_blank">Install Git</a>
 
