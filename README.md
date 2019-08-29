@@ -122,11 +122,21 @@ curl localhost:49160/api/all
 
 * Test from any browser by entering the following url:
 ```bash
-https://<vm-ip>:49160/ # replace <vm-ip> with your LinuxOne machine IP address.
-https:<vm-ip>:49160/api/all
+<vm-ip>:49160/ # replace <vm-ip> with your LinuxOne machine IP address.
+<vm-ip>:49160/api/all
 ```
+<br>
+<p align="center">
+  <img src="images/gifs/browser.gif">
+</p>
+<br>
 
 * Test with [Postman](https://www.getpostman.com/downloads/)
+```bash
+<vm-ip>:49160/ # replace <vm-ip> with your LinuxOne machine IP address.
+<vm-ip>:49160/api/all
+```
+<br>
 <br>
 <p align="center">
   <img src="images/gifs/postman.gif">
