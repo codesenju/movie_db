@@ -21,7 +21,7 @@ $ docker daemon -g /local/docker/lib &
 ```
 <br>
 <p align="center">
-  <img src="images/gifs/installdocker.gif">
+  <img src="images/gifs/installingdocker.gif">
 </p>
 <br>
 
