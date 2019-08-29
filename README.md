@@ -31,29 +31,23 @@ $ git clone https://github.com/codesenju/imdb_lite.git
 $ cd imdb_lite 
 ```
 Download data.tar.gz file [here](https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k) which has the records for the movie database.
-
 Copy the data.tar.gz into your folder /imdb_lite.
-Run the command $ `` ls -alh ``and your folder /imdb_lite should be looking like this:
-
 <br>
 <p align="center">
   <img src="images/gifs/mega.gif">
 </p>
 <br>
- 
-If your directory looks similar to the image bellow you can move on to the next step to build your db2 image.
+Run the command ``$ ls -alh `` to view directory contents and if your directory looks similar to the image bellow you can move on to the next step to build your db2 image.
 <br>
 <p align="center">
   <img src="images/imdb_lite_dir.PNG">
 </p>
 <br>
 
-Build your db2 image
-
+Build your db2 image.
 ```shell
 $ docker build -t codesenju/imdb_lite .
 ```
-
 <br>
 <p align="center">
   <img src="images/gifs/build.gif">
