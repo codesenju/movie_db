@@ -1,13 +1,15 @@
 ![Diagram](images/overview.png)
 
 # Part 1 - Prerequisites
-* Register at LinuxOne Community Cloud <a href="https://developer.ibm.com/linuxone/" target="_blank">here</a> for a trial account and get a RHEL VM.
+* Register at LinuxOne Community Cloud [here](https://developer.ibm.com/linuxone/") for a trial account and get a RHEL VM.
+or  [here](https://developer.ibm.com/linuxone/"){:target="blank"}
+or [here](https://developer.ibm.com/linuxone/"){:target="_blank"}
 
 * Click on Try Virtual Machines on the LinuxONE™ Community Cloud
 
 ![try](images/try.PNG)
 
-* <a href="https://git-scm.com/downloads" target="_blank">Install Git</a>
+* <a href="https://git-scm.com/downloads" target="blank">Install Git</a>
 
 * Install docker:
 ```bash
