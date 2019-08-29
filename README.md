@@ -62,7 +62,7 @@ docker network create mynet
 ```
 * ### Run your db2 image as a container.
 ```bash
-docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -v /usr/src/app:/database codesenju/imdb_lite
+docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME= -v /usr/src/app:/database codesenju/imdb_lite
 ```
 <br>
 <p align="center">
