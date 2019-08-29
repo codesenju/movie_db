@@ -38,11 +38,8 @@ Copy the data.tar.gz into your folder /imdb_lite.
 </p>
 <br>
 Run the command ``$ ls -alh `` to view directory contents and if your directory looks similar to the image bellow you can move on to the next step to build your db2 image.
-<br>
-<p align="center">
-  <img src="images/imdb_lite_dir.PNG">
-</p>
-<br>
+
+![imdb_lite_dir](images/imdb_lite_dir.PNG)
 
 Build your db2 image.
 ```shell
