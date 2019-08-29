@@ -47,10 +47,13 @@ If your directory looks similar to the image bellow you can move on to the next 
   <img src="images/imdb_lite_dir.PNG">
 </p>
 <br>
+
 Build your db2 image
+
 ```shell
 $ docker build -t codesenju/imdb_lite .
 ```
+
 <br>
 <p align="center">
   <img src="images/gifs/build.gif">
