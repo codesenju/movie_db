@@ -76,18 +76,20 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
 
  - You should see the following output on console:
    
-![dockerps_imdblite](images/dockerpsimdblite.PNG)
+![dockerps_imdblite](images/ps.PNG)
 
 * ### Now we going to login into the db2 container and configure the database schema.
 
 ```shell
-docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
-``` 
-![exec_imdblite](images/exec_imdblite.png)
-
-  - Run the script `` ./createschema.sh `` to create the database schema and import table records.
-
-![createschema](images/createschema.png)
+docker exec -ti <CONTAINER-ID> bash -c "su - db2inst1"
+cd /var/custom
+./createschema.sh
+```
+<br>
+<p align="center">
+  <img src="images/gifs/runcontainer.gif">
+</p>
+<br>
 
  - When you're done exit the container with ``$ exit ``.
 
