@@ -1,7 +1,11 @@
 ![Diagram](images/overview.png)
 
 # Part 1 - Prerequisites
-Register at LinuxOne Community Cloud for a trial account and get a linux VM. We will be using a RHEL base image.
+Register at LinuxOne Community Cloud  [here](https://developer.ibm.com/linuxone/) for a trial account and get a linux VM.
+
+Click on Try Virtual Machines on the LinuxONE™ Community Cloud
+
+![try](images/try.png)
 
 [Install git](https://git-scm.com/downloads) 
 
@@ -23,13 +27,17 @@ $ cd imdb_lite
 
 Download data.tar.gz file [here](https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k) which has the records for the movie database.
 
+![mega](images/mega.png)
+
 Copy the data.tar.gz into your folder /imdb_lite.
 Run the command $ `` ls -alh ``and your folder /imdb_lite should be looking like this below:
+ ![lsalh](images/lsalh.png)
  
 If your directory looks similar to the above image now you can move on to the next step to build your db2 image.
 ```shell
 $ docker build -t codesenju/imdb_lite .
 ```
+![build](images/build.png)
 
 Create a container network that will be used by your two micro services.
 ```shell 
@@ -40,13 +48,19 @@ Run your db2 image as a container.
 $ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME=MOVIE -v /usr/src/app:/database codesenju/imdb_lite
 ```
 After successfully running the last command you can check if you have a container instance of db2 running by executing the following ``$ docker ps ``.
- 
+
+ ![dockerps_imdblite](images/dockerps_imdblite.png)
 
 Now we going to login into the db2 container and configure the database schema.
 ```shell
 $ docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
 ``` 
+![exec_imdblite](images/exec_imdblite.png)
+
 Run the script `` ./createschema.sh `` to create the database schema and import table records.
+
+![createschema](images/createschema.png)
+
 When you're done exit the container with ``$ exit ``.
 
 # Part 3 – Node.js App Container 
