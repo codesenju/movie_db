@@ -71,7 +71,7 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
 </p>
 <br>
 
-  - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command:
+  - After successfully executing the last command you can check if you have a container instance of db2 running by executing the following command:
    
 ```bash
 docker ps
