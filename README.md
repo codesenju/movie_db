@@ -53,7 +53,7 @@ docker build -t codesenju/imdb_lite .
 </p>
 <br>
 
- - After successful build, run the command ``docker images`` to see your image loaded into docker. On completion, you should see the following output on console:
+ - After successful build, run the command `` docker images `` to see your image loaded into docker. On completion, you should see the following output on console:
 
 ![docker_images](images/dockerimages.PNG)
 
@@ -73,7 +73,9 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
 
   - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command:
    
-``$ docker ps ``
+```bash
+docker ps
+```
 
  - You should see the following output on console:
    
@@ -81,7 +83,7 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
 
 * ### Now we going to login into the db2 container and configure the database schema.
 
-```shell
+```bash
 docker exec -ti <CONTAINER-ID> bash -c "su - db2inst1"
 cd /var/custom
 ./createschema.sh
@@ -95,7 +97,7 @@ cd /var/custom
  - When you're done exit the container with ``exit``.
 
 # Part 3 – Node.js App Container 
-```shell
+```bash
 cd ~
 git clone https://github.com/codesenju/nodejs_api4db2.git
 cd nodejs_api4db2
@@ -110,7 +112,7 @@ docker run --net mynet -p 49160:8081 -d codesenju/nodejs_api4db2
 
 # Part 4 - Test your environment
 * Test within the LinuxOne machine using cURL:
-```shell
+```bash
 curl localhost:49160
 curl localhost:49160/api/all
 ```
