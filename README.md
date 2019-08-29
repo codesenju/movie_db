@@ -102,6 +102,11 @@ cd nodejs_api4db2
 docker build -t codesenju/nodejs_api4db2 .
 docker run --net mynet -p 49160:8081 -d codesenju/nodejs_api4db2
 ```
+<br>
+<p align="center">
+  <img src="images/gifs/nodejs.gif">
+</p>
+<br>
 # Part 4 - Test your environment
 ```shell
 curl localhost:49160
