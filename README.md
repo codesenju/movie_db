@@ -30,15 +30,16 @@ $ docker daemon -g /local/docker/lib &
 $ git clone https://github.com/codesenju/imdb_lite.git
 $ cd imdb_lite 
 ```
-
 Download data.tar.gz file [here](https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k) which has the records for the movie database.
-
-![mega](images/mega.png)
 
 Copy the data.tar.gz into your folder /imdb_lite.
 Run the command $ `` ls -alh ``and your folder /imdb_lite should be looking like this:
 
- ![lsalh](images/lsalh.png)
+<br>
+<p align="center">
+  <img src="images/gifs/mega.gif">
+</p>
+<br>
  
 If your directory looks similar to the above image now you can move on to the next step to build your db2 image.
 ```shell
