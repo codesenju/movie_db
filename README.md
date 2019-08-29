@@ -41,11 +41,21 @@ Run the command $ `` ls -alh ``and your folder /imdb_lite should be looking like
 </p>
 <br>
  
-If your directory looks similar to the above image now you can move on to the next step to build your db2 image.
+If your directory looks similar to the image bellow you can move on to the next step to build your db2 image.
+<br>
+<p align="center">
+  <img src="images/imdb_lite_dir.PNG">
+</p>
+<br>
+Build your db2 image
 ```shell
 $ docker build -t codesenju/imdb_lite .
 ```
-![build](images/build.png)
+<br>
+<p align="center">
+  <img src="images/gifs/build.gif">
+</p>
+<br>
 
 Create a container network that will be used by your two micro services.
 ```shell 
