@@ -64,10 +64,13 @@ docker network create mynet
 ```bash
 docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME=MOVIE -v /usr/src/app:/database codesenju/imdb_lite
 ```
+<br>
+<p align="center">
+  <img src="images/gifs/run.gif">
+</p>
+<br>
 
-
-* After successfully executing the last command you can check if you have a container instance of db2 running by executing the following following command: 
-
+- After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command: 
 ``$ docker ps ``
 - You should see the following output on console:
 ![dockerps_imdblite](images/dockerps_imdblite.png)
