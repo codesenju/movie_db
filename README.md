@@ -69,13 +69,16 @@ docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e
   <img src="images/gifs/run.gif">
 </p>
 <br>
-   - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command: 
+
+   - After successfully executing the last command you can check if you have a container instance of db2 is running by executing the following command:
+   
 ``$ docker ps ``
    - You should see the following output on console:
    
-![dockerps_imdblite](images/dockerps_imdblite.PNG)
+![dockerps_imdblite](images/dockerpsimdblite.PNG)
 
 * Now we going to login into the db2 container and configure the database schema.
+
 ```shell
 docker exec -ti <CONTAINER-ID> bash -c “su - db2inst1”
 ``` 
