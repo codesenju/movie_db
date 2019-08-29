@@ -54,7 +54,7 @@ docker build -t codesenju/imdb_lite .
 
 * After successful build, run the command ``docker images`` to see your image loaded into docker. On completion, you should see the following output on console:
 
-![docker_images](images/docker_images.PNG)
+![docker_images](images/dockerimages.PNG)
 
 * Create a container network that will be used by your two micro services.
 ```bash 
