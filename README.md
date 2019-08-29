@@ -91,7 +91,7 @@ cd /var/custom
 </p>
 <br>
 
- - When you're done exit the container with ``$ exit ``.
+ - When you're done exit the container with ``exit``.
 
 # Part 3 – Node.js App Container 
 ```shell
