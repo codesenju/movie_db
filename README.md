@@ -1,9 +1,7 @@
 ![Diagram](images/overview.png)
 
 # Part 1 - Prerequisites
-* Register at LinuxOne Community Cloud [here](https://developer.ibm.com/linuxone/") for a trial account and get a RHEL VM.
-or  [here](https://developer.ibm.com/linuxone/"){:target="blank"}
-or [here](https://developer.ibm.com/linuxone/"){:target="_blank"}
+* Register at LinuxOne Community Cloud <a href="https://developer.ibm.com/linuxone/" target="blank">here</a> for a trial account and get a RHEL VM.
 
 * Click on Try Virtual Machines on the LinuxONE™ Community Cloud
 
