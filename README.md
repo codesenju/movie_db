@@ -30,7 +30,8 @@ Download data.tar.gz file [here](https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87Wa
 ![mega](images/mega.png)
 
 Copy the data.tar.gz into your folder /imdb_lite.
-Run the command $ `` ls -alh ``and your folder /imdb_lite should be looking like this below:
+Run the command $ `` ls -alh ``and your folder /imdb_lite should be looking like this:
+
  ![lsalh](images/lsalh.png)
  
 If your directory looks similar to the above image now you can move on to the next step to build your db2 image.
