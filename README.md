@@ -1,13 +1,13 @@
 ![Diagram](images/overview.png)
 
 # Part 1 - Prerequisites
-* Register at LinuxOne Community Cloud  [here](https://developer.ibm.com/linuxone/){:target="_blank" rel="noopener"} for a trial account and get a RHEL VM.
+* Register at LinuxOne Community Cloud <a href="https://developer.ibm.com/linuxone/" target="_blank">here</a> for a trial account and get a RHEL VM.
 
 * Click on Try Virtual Machines on the LinuxONE™ Community Cloud
 
 ![try](images/try.png)
 
-* [Install git](https://git-scm.com/downloads){:target="_blank" rel="noopener"}
+* <a href="https://git-scm.com/downloads" target="_blank">Install Git</a>
 
 * Install docker:
 ```bash
@@ -30,7 +30,7 @@ docker daemon -g /local/docker/lib &
 git clone https://github.com/codesenju/imdb_lite.git
 cd imdb_lite 
 ```
-* Download data.tar.gz file [here](https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k){:target="_blank" rel="noopener"} which has the records for the movie database.
+* Download data.tar.gz file <a href="(https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k" target="_blank">here</a> which has the records for the movie database.
 * Copy the data.tar.gz into your folder /imdb_lite.
 <br>
 <p align="center">
@@ -131,7 +131,7 @@ curl localhost:49160/api/all
 </p>
 <br>
 
-* Test with [Postman](https://www.getpostman.com/downloads/){:target="_blank" rel="noopener"}
+* Test with ![Postman](https://www.getpostman.com/downloads/)
 ```bash
 <vm-ip>:49160/ # replace <vm-ip> with your LinuxOne machine IP address.
 <vm-ip>:49160/api/all
