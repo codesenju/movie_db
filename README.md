@@ -30,6 +30,7 @@ docker daemon -g /local/docker/lib &
 git clone https://github.com/codesenju/imdb_lite.git
 cd imdb_lite 
 ```
+* >>>>>>> https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k
 * Download data.tar.gz file <a href="(https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k" target="_blank">here</a> which has the records for the movie database.
 * Copy the data.tar.gz into your folder /imdb_lite.
 <br>
