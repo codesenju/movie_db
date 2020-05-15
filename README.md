@@ -27,7 +27,7 @@ docker daemon -g /local/docker/lib &
 
 # Part 2 – IBM db2 Database Container
 ```bash
-git clone https://github.com/codesenju/imdb_lite.git
+git clone https://github.com/codesenju/movie_db.git
 cd imdb_lite 
 ```
 * >>>>>>> https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k
