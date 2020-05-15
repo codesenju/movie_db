@@ -28,11 +28,11 @@ docker daemon -g /local/docker/lib &
 # Part 2 – IBM db2 Database Container
 ```bash
 git clone https://github.com/codesenju/movie_db.git
-cd imdb_lite 
+cd movie_db 
 ```
 * >>>>>>> https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k
 * Download data.tar.gz file <a href="(https://mega.nz/#!BF0BRYAY!9vIGSwVtLU_FYtJf87WaxnAcrcaBHgJzDiGSInP359k" target="_blank">here</a> which has the records for the movie database.
-* Copy the data.tar.gz into your folder /imdb_lite.
+* Copy the data.tar.gz into your folder /movie_db.
 <br>
 <p align="center">
   <img src="images/gifs/mega.gif">
@@ -46,7 +46,7 @@ cd imdb_lite
 * ### Build your db2 image.
 ```bash
 rm -rf images/ #first lets remove unnecessary files
-docker build -t codesenju/imdb_lite .
+docker build -t codesenju/movie_db
 ```
 <br>
 <p align="center">
@@ -64,7 +64,7 @@ docker network create mynet
 ```
 * ### Run your db2 image as a container.
 ```bash
-docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME= -v /usr/src/app:/database codesenju/imdb_lite
+docker run -itd --net mynet --name micro_db2 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=db2admin -e DBNAME= -v /usr/src/app:/database codesenju/movie_db
 ```
 <br>
 <p align="center">
