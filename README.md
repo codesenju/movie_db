@@ -46,7 +46,7 @@ cd movie_db
 * ### Build your db2 image.
 ```bash
 rm -rf images/ #first lets remove unnecessary files
-docker build -t codesenju/movie_db
+docker build -t codesenju/movie_db .
 ```
 <br>
 <p align="center">
